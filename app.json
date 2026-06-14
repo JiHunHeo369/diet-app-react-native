@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "다이어트 캘린더",
+    "slug": "diet-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#FF6F55"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.s3i.dietapp",
+      "infoPlist": {
+        "NSCameraUsageDescription": "음식 사진 촬영을 위해 카메라 접근이 필요합니다.",
+        "NSPhotoLibraryUsageDescription": "음식 사진 선택을 위해 갤러리 접근이 필요합니다."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FF6F55"
+      },
+      "package": "com.s3i.dietapp",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "음식 사진 선택을 위해 갤러리 접근이 필요합니다.",
+          "cameraPermission": "음식 사진 촬영을 위해 카메라 접근이 필요합니다."
+        }
+      ],
+      "expo-font"
+    ]
+  }
+}
